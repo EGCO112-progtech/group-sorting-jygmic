@@ -23,7 +23,7 @@ void selectionSort(int arr[],int n) {
         arr[max] = arr[i];
         arr[i] = temp; 
         display(arr,n);
-        printf("\n\n");
+        printf("\n");
     }
 }  
 
