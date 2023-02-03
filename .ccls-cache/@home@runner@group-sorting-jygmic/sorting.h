@@ -10,7 +10,6 @@ void display(int a[], int n) {
 }
 
 void selectionSort(int arr[],int n) {
-    printf("\n\n");
     int temp,max,i,j;
     for(i=0;i<n;i++) {
         max = i; 
@@ -25,6 +24,7 @@ void selectionSort(int arr[],int n) {
         display(arr,n);
         printf("\n");
     }
+  printf("\n");
 }  
 
 void swap(int *a, int *b) {
