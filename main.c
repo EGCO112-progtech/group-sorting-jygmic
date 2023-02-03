@@ -11,10 +11,12 @@ int main(int argc, char *argv[]) {
   for (i = 0; i < N; i++){
     a[i] = atoi(argv[i + 2]); // Change arguments to int
   }
+  printf(">>N is %d\n",N);
   display(a,N);
-  if(strcmp(argv[1],"bubble")) bubbleSort(a,N);
-  else if(strcmp(argv[1],"insertion")) insertion(a,N);
-  else selectionSort(a,N);
+  printf(">>Test is ..%s..\n\n",argv[1]);
+  if(strcmp(argv[1],"bubble")==0){ printf(">>bubble"); bubbleSort(a,N);}
+  else if(strcmp(argv[1],"insertion")==0){ printf(">>insertion"); insertion(a,N);}
+  else {printf(">>selection");selectionSort(a,N);}
   display(a,N);
   
   //printf("Count is %d\n and text is %s",N,argv[1]);
