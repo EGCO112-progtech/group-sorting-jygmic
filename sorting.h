@@ -29,12 +29,6 @@ void selectionSort(int arr[],int n) {
 }  
 
 
-
-void insertion(int a[],int n){
-
-
-}
-
 void swap(int *a,int *b){
  int temp;
   temp=*a;
