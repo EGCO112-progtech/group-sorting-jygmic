@@ -10,7 +10,7 @@ void display(int a[],int n){
   
 }
 
-void SelectionSort(int arr[],int n) {
+void selectionSort(int arr[],int n) {
     printf("\n\n");
     int temp,max,i,j;
     for(i=0;i<n;i++) {
