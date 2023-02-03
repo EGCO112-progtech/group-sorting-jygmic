@@ -1,52 +1,51 @@
 // selection sort function module in C
 
-void display(int a[], int n) {
+void display(int a[],int n){
 
-  int i;
+    int i;
 
-  for (i = 0; i < n; i++)
-    printf("%5d", a[i]);
-  printf("\n");
+    for(i=0;i<n;i++)
+        printf("%5d",a[i]);
+    printf("\n");
+  
 }
 
-void selectionSort(int data[], int length) {
-  int i, j, m, mi;
+void selectionSort(int data[], int length) 
+{ 
+	int i, j, m, mi; 
+	
+     display(data,length);
+     
+	
+} 
 
-  display(data, length);
+
+
+void insertion(int a[],int n){
+
+
 }
 
-void swap(int *a, int *b) {
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
+void swap(int *a,int *b){
+ int temp;
+  temp=*a;
+  *a=*b;
+  *b=temp;
+  
 }
 
-void insertion(int a[], int n) {
-  int j,i;
-  for(j=1; j<n; j++)
-    {
-  int insert = a[j]; //select target
-  for(i=j-1; i>=0; i--) //check before target
-    {
-      if(insert < a[i]) break;
-      else a[i+1] = a[i];
-      display(a,n);
-    }
-  a[i+1] = insert;
+void bubbleSort(int a[],int n){
+
+int i,j;
+int sorted;
+// how may pair to compare?
+for(j=1;j<=n-1;j++){
+ 
   display(a,n);
-  printf("\n"); // New - line each main loop
-}
-  printf("\n"); // New - line loop exit
+ }
+  
 }
 
-void bubbleSort(int a[], int n) {
 
-  int i, j;
-  int sorted;
-  // how may pair to compare?
-  for (j = 1; j <= n - 1; j++) {
 
-    display(a, n);
-  }
-}
+
