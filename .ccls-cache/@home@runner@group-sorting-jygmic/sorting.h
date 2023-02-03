@@ -11,7 +11,7 @@ void display(int a[], int n) {
 
 void selectionSort(int arr[],int n) {
     int temp,max,i,j;
-    for(i=0;i<n;i++) {
+    for(i=0;i<n-1;i++) {
         max = i; 
         for(j=i+1;j<n;j++) {
             if(arr[j] > arr[max]) {
